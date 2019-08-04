@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/AritaFont.css">
+    
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">   
+    $(document).ready( function() { 
+    $("#skill").load("skill.html"); }); 
+    </script>
+    
+</head>
+<body>
+  <!-- s : 메인페이지 -->
+   <nav class="nav">
+       <ul>
+           <li><a href="#main">메인</a></li>
+            <li><a href="#active">활동</a></li>
+            <li><a href="#skill">스킬</a></li>
+            <li><a href="#port">포트폴리오</a></li>
+        </ul>
+   </nav>
+   <header id="main">
+       
+   </header>
+   <!-- e : 메인페이지 -->
+   
+   <!-- s : 활동 -->
+   <div class="active" id="active">
+       <p style="font-size:20px; font-weight:bold;">활동</p>
+       <div class="content">
+          <div class="grid cont1">
+              <h4>2019년 7월 20일</h4>
+              <h2>'Hello New( ) World' 1박2일 청소년 해커톤 참가, 우수상 수상</h2>
+              <h3>친구들과 함께 팀으로 참가하여 웹서비스 - 개교기념 - 을 제작하였습니다. 개교기념은 지방의 폐교를 이용해 건축 관련 특성화고 혹은 대학교 학생들에게 리모델링을 할 수 있는 경험을 제공하고, 리모델링된 학교를 숙박장소로 재탄생 시키는 창업 아이디어 입니다.
+             </h3>
+             <div></div>
+          </div>
+          <div class="grid cont2">
+               <h4>2018년 11월 05일</h4>
+               <h2>STAC 생활정보부분 최우수상(2위)</h2>
+               <div></div>
+          </div>
+          <div class="grid cont3">
+               <h4>2019년 1월 (3주간)</h4>
+               <h2>2018학년도 일본 글로벌 인턴쉽 참가 </h2>
+               <div></div>
+          </div>
+          <div class="grid cont4">
+               <h4>2018년 12월 28일</h4>
+              <h2>미림 소프트웨어 대회 최우수상(1위)</h2>
+              <div></div>
+          </div>
+          <div class="grid cont5">
+               <h4>2019년 8월 - 2019년 8월</h4>
+              <h2>28기 학생회 훈련 및 안전부장</h2>
+              <div></div>
+          </div>
+        </div>
+   </div>
+   <!-- e : 활동 -->
+   
+   <!-- s : 스킬 -->
+   <div class="slideshow-container" id="skill">
+    <div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+   
+    <div class="mySlides fade">
+      <img src="images/0006.png" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/0007.png" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/0008.png" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/0009.png" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/0010.png" style="width:100%">
+    </div>
+</div>
+   <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides,3000); // Change image every 2 seconds
+        }
+</script>
+   <!-- e : 스킬 -->
+   
+    <!-- s : 포폴 -->
+   <div class="port" id="port">
+       <p style="font-size:20px; font-weight:900;">포트폴리오</p>
+       <div class="content">
+          <div class="grid cont1">
+              <div></div>
+              <h2>
+                  <a href="https://baemunju.github.io/webproject01/index.html" target="_blank">[WEB] 동네돌이</a>
+              </h2>
+              <h3>제가 살고있는 동네를 소개하는 웹서비스입니다. 사용자가 직접적인 방문 없이도 장소에 대한 생생한 경험을 할 수 있도록 하였습니다. 직접 촬영한 소스와 밑줄 효과 및 인터랙션을 통해 소개하는 장소의 매력을 더 느끼고, 소중한 사람과 함께 방문하고 싶다는 생각을 하도록 유도하고자 했습니다.
+             </h3>
+          </div>
+          <div class="grid cont2">
+              <div></div>
+              <h2>
+                  <a href="http://dorothy.wisemuji.com/" target="_blank" >[WEB] 도로시 Dorothy</a>
+              </h2>
+              <h3>동아리 홍보부터 신청까지 한 번에! 미림의 동아리 종합관리 웹서비스입니다. 도로시처럼 새로운 세계에 도착한 신입생들에게 주는 마법같은 선물이라 생각해 'Dorothy'라 하였습니다. 쉽게 홍보, 신청하며 캘린더를 통해 중복지원을 방지할 수 있습니다. 동아리 부장은 신청한 학생들의 정보를 열람, 알림을 받을 수 있습니다.
+             </h3>
+          </div>
+          <div class="grid cont3">
+              <div></div>
+              <h2><a href="https://drive.google.com/file/d/1a6d1bLJ_ACJ94GYA2RZd_dZyqu112N9W/view?usp=sharing" target="_blank">[WEB] 개교기념</a>
+              </h2>
+              <h3>개교기념은 숙박 웹서비스입니다. 문을 닫은 폐교를 리모델링과 관련된 특성화고, 대학교 학생들에게 실습용으로 제공한 뒤 리모델링이 완성된 학교를 숙박시설로 제공하는 창업 아이디어를 통해 제작되었습니다. 숙박시설이 된 학교의 관리를 실버세대에게 일자리로 제공함으로써 폐교 처리 문제와 실버세대 일자리 문제를 해결할 수 있습니다.
+
+             </h3>
+          </div>
+          <div class="grid cont4">
+              <div></div>
+              <h2><a href="https://drive.google.com/file/d/1tQaQWk3URNwFObPpNXk3qUqFRLiw-MFE/view?usp=sharing" target="_blank">[WEB] 16th AppJam을 위한 웹사이트</a></h2>
+              <h3>무박2일 해커톤인 AppJam에서 주제 및 제출 방법등 해커톤에서 필요한 정보를 모아놓은 웹서비스입니다. 주제인 '한 여름밤의 꿈' 과 어울리도록 밤하늘을 연상시키는 일러스트와 컬러조합을 사용하였습니다. 
+             </h3>
+          </div>
+          <div class="grid cont5">
+              <div></div>
+              <h2><a href="https://drive.google.com/file/d/15D2YbjnvT_8eRz63UDTv5sgJ60kXGJ0N/view?usp=sharing" target="_blank">[WEB] 17th AppJam을 위한 웹사이트</a></h2>
+              <h3>무박2일 해커톤인 AppJam에서 주제 및 제출 방법등 해커톤에서 필요한 정보를 모아놓은 웹서비스입니다. 해커톤의 컨셉이었던 해리포터와 어울리도록 해리포터에서 등장하는 물건을 활용하여 제작하였습니다. 물건을 클릭하면 팝업으로 정보가 등장하도록 하였습니다.
+             </h3>
+          </div>
+          <div class="grid cont6">
+              <div></div>
+              <h2><a href="https://drive.google.com/file/d/1jdj0WLhjrvKT7J2CmUztjF_0fPgg7nOZ/view?usp=sharing" target="_blank">[WEB] MINI 웹사이트 리디자인</a></h2>
+              <h3>레트로한 감성을 가지고 있는 자동차 회사 'MINI'의 웹사이트를 리디자인 하였습니다. 기존의 웹사이트와 달리 MINI의 레트로한 느낌과 오래된 역사를 표현하도록 노력하였습니다. 자동차의 색감이 잘 보이도록 하기 위해 Black&White컬러를 메인 컬러로 사용하였습니다.
+             </h3>
+          </div>
+          <div class="grid cont7">
+              <div></div>
+              <h2> <a href="https://drive.google.com/file/d/1D4b6AMPYbEGpychQePALYaxUYv8_6JuO/view?usp=sharing" target="_blank">[WEB] 영화 '부다페스트호텔' 웹사이트 디자인</a></h2>
+              <h3>영화 '부다페스트호텔'에 관한 정보를 모아놓은 웹사이트를 디자인하였습니다. 영화에서 자주 사용되었던 푸른 색감을 활용하여 웹사이트를 디자인하였습니다. 웹사이트에서는 영화 줄거리 및 감독, 캐릭터 등을 소개하고 있습니다.
+             </h3>
+          </div>
+          <div class="grid cont8">
+              <div></div>
+              <h2><a href="https://drive.google.com/drive/folders/1R4AnuEOoCJMnju3ByrBgjOWQiovj4_V9?usp=sharing" target="_blank">[UI/UX] 협동조합 어린이집을 위한 캘린더 서비스</a></h2>
+              <h3>협동조합 어린이집은 부모님이 어린이집의 주체가 되어 어린이집을 운영해나가는 시스템입니다. 아이들에게 영어, 수학등의 공부보단 자연과 함께하는 놀이를 더 중요시합니다. 어린이집을 운영진에게 설문조사를 통해 하나로 통일된 일정관리 서비스가 필요하다는 결과를 얻게 되어 서비스를 기획하게 되었습니다.
+             </h3>
+          </div>
+          <div class="grid cont9">
+              <div></div>
+              <h2><a href="https://drive.google.com/file/d/14dSoDeklMjGtyz0Vr67RCeh7qdMzKvn1/view?usp=sharing" target="_blank">[UI/UX] 프리젠트 PRE-SENT</a></h2>
+              <h3>당신의 선물같은 시간을 미리 준비하세요! 모두에게 발표는 떨리고 긴장되기 마련입니다. 혹시 실수할까 노심초사할 때, 프리젠트를 이용하여 발표연습을 해보세요.
+             </h3>
+          </div>
+          <div class="grid cont10">
+              <div></div>
+              <h2><a href="https://marvelapp.com/4b83hd0" target="_blank">[UI/UX] 집이야</a></h2>
+              <h3>'집이야'는 늦은 밤에 야식을 주문하는 것이 두려운 여성과 아이들을 위해 집에서도 간단하게 만들어 먹을 수 있는 요리들을 소개하는 SNS 서비스를 기획하였습니다. 원하는 요리를 태그로 검색하여 찾아볼 수 있고, 달마다 진행되는 이벤트에 참여하여 상품을 받을 수 있습니다. 
+             </h3>
+          </div>
+          <div class="grid cont11">
+              <div></div>
+              <h2><a href="https://youtu.be/o_sEowcsOX4" target="_blank">[3D] 게임 에뮬레이터</a></h2>
+              <h3>Lover Heulten사의 게임 에뮬레이터인 R-Kaid-R을 3D 프로그램을 이용하여 제작하였습니다. 에뮬레이터의 8개의 게임버튼, USB연결기능 등의 장점을 소개하기 위해 제품 프로모션 영상도 제작하였습니다.
+             </h3>
+          </div>
+          <div class="grid cont12">
+              <div></div>
+              <h2><a href="https://drive.google.com/drive/folders/14jthdpcQBNRnHyzj7P2hzZ7aVCk2s1gf?usp=sharing" target="_blank">[UI/UX] 아시아토</a> </h2>
+              <h3>일본 글로벌 인턴쉽에 참여하여 친구들과 함께 제작한 서비스 입니다. 친구 또는 가족과 함께하는 여행을 더 알차게 보내기 위해 유명장소마다 미션을 제공합니다. 모든 미션을 완료하면 지역과 관련된 상품을 지급하도록 기획하였습니다.
+             </h3>
+          </div>
+          
+        </div>
+   </div>
+   <!-- e : 포폴 -->
+   
+   <!-- s : 푸터 -->
+    <div class="footer">
+        <a href="https://github.com/BaeMunju?tab=repositories">
+        https://github.com/BaeMunju/repositories</a>
+    </div>
+   <!-- e : 푸터-->
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+/* Style the tab content */
+#portfolio { width: 1420px; margin:0 auto}
+
+.tabcontent {
+ width:340px; height:340px;
+  border: 1px solid #ccc;
+  border-left: none;
+  position:absolute;
+  display: none;
+}
+
+/* Style the tab */
+.tab {
+   display: grid; 
+   grid-template-columns: 340px 340px 340px 340px;
+   grid-template-rows:340px 340px;
+    grid-gap:20px; overflow:hidden;
+}
+
+/* 그리드 디자인 */
+.tab button {
+  border:3px solid red;  box-sizing:border-box;
+  display: block;
+  cursor: pointer; background-color: aqua;
+}
+
+#exam {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/* 호버하면 회색으로 색변함 */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Clear floats after the tab */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
